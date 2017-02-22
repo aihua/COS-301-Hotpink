@@ -2,7 +2,7 @@
 %Latex Document made by Team HotPink for SRS, Round 1, Assignment 1, COS 301 2017
 %
 
-\documentclass[11pt,a4paper]{report}
+\documentclass[11pt,a4paper]{article}
 
 \title{Software Requirements Specification \\ NavUP \\ COS 301 \\ Team: Hotpink}
 \date{Friday, February 17, 2017}
@@ -19,42 +19,41 @@
 \begin{document}
 \maketitle
 
-
 %insert table of contents and figues etc
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%		INTRODUCTION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\chapter*{Introduction}
+\section{Introduction}
 The class of COS 301 2017 have been assigned the NavUP project, an application that will assist students in their navigation around the University of Pretoria.
 
-	\section*{Purpose}
+	\subsection{Purpose}
 	The purpose of this document is to provide a detailed description of the requirements for the NavUP application. It will outline and explain the complete plan for building the NavUP system.
 	Among these explanations will include the constraints for the system and how the system will interact with external applications. The primary purpose of this document is to be used for client approval such that the system may be implemented.
 
 
-	\section*{Scope}
+	\subsection{Scope}
 	The NavUP mobile application makes use of the Wi-Fi on campus in order to assist the user in finding the optimal route to their destination, whether it be to lecture halls, food courts, ablution facilities or possibly even sport or faculty houses.
 
 	The NavUP system will also include best route capabilities as well as allowing users with disabilities to navigate routes that are accessible to them. The NavUP system will also include points of interest as well as any activities that may be happening on campus.
 
 	The NavUP mobile application will use the users GPS location, on their phones, in conjunction with all the Wi-Fi routers on campus in order to determine the best route from their starting location. All of the users phones should be wifi enabled and have access to Universitys Wi-Fi login information.
-	\section*{Definitions, Acronyms and Abbreviations}
+	\subsection{Definitions, Acronyms and Abbreviations}
 
-	\section*{References}
+	\subsection{References}
 
 
-	\section*{Overview}
+	\subsection{Overview}
 		
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%		OVERALL DESCRIPTION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\chapter*{Overall Description}
-	\section*{Product Perspective}
-	\section*{Product Functions}
+\section{Overall Description}
+	\subsection{Product Perspective}
+	\subsection{Product Functions}
 	The NavUP mobile application will support a variety of functions namely; navigation, providing information, allowing for users to decide on different routes, achieving goals and personalistaion capabilities.
 	\\
 
@@ -69,7 +68,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 
 	Weekly goals will be provided to motivate users to attend all their lectures during the week as well as to increase the amount of steps they take.
 
-	\subsection*{User Characteristics}
+	\subsection{User Characteristics}
 	There are three main categories of individuals that will make use of the software namely administrators, general users and information providers.
 	\\
 
@@ -82,7 +81,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 
 	The information providers role will be to inform administrators regarding events taking place at the university as well as to provide information regarding different buildings and landmarks within the university. They will not necessarily make use of the mobile application and will therefore only require knowledge regarding the university itself.
 
-	\section*{Constraints}
+	\subsection{Constraints}
 	The following are restrictions related to the application:
 		\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
@@ -94,28 +93,28 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Usability - The applications interface should be easy to use and understand.
 				\item Size - The application should not require too much memory in order to operate.
 				\end{enumerate}
-	\subsection*{Assumptions and Dependencies}
+	\subsubsection{Assumptions and Dependencies}
 	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%		REQUIREMENTS SPECIFICATION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\chapter*{Requirements Specification}
+\section{Requirements Specification}
 
-	\section*{External Interface and Architectural Requirements}
+	\subsection{External Interface and Architectural Requirements}
 		
 		The NavUp system will be available for use on many platforms and make use of multiple means of newtork links and other extenal interfaces such as GPS and GIS services.
 		Other requirements such as quality, integration and architectural constraints will also be covered in this section.
 		
-			\subsection*{Access Channel Requirements}
+			\subsubsection{Access Channel Requirements}
 				From the typical user's perspective, approximately 60000 students and staff, the NavUp system will largely be focused on mobile devices such as Android or iOS smartphones.
 				These devices, will make use of location services and internet capabilities to send and recieve data to and from access channels and servers using mobile data,
 				WiFi signals, crowdsourcing and geolocation systems such as GPS and GIS. The campus WiFi network will be the main form of system access as the signal
 				strength covers most of the large area the University spans, and will help location accuracy indoors where the mobile devices may struggle to find decent mobile
 				and location based signals.
 				
-			\subsection*{Quality Requirements}
+			\subsubsection{Quality Requirements}
 				A system of the complexity and scale of NavUP must meet specific quality requirements such as:
 				
 				\begin{enumerate}
@@ -126,20 +125,20 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Integrability - the system should allow for additional features and modules to be added easily.
 				\end{enumerate}
 				
-			\subsection*{Integration Requirements}
+			\subsubsection{Integration Requirements}
 				The NavUp system will be implemented simultaneously by all the students enrolled in COS 301, it is therefore imperative that the system complies to a low coupling and high cohesion standard.
-			\subsection*{Architecture Constraints}
+			\subsubsection{Architecture Constraints}
 				The clients ave specified the use of technologies such as GIS, UI/UX, Mobile Development (Android/iOS),  Real-time Data Analysis, Data Streaming and
 				Persistence, and a large focus on the use of WiFi Networking to boost the system's accuracy. A module that supplies targeted delivery of information was also requested hence an intelligent program is also required.
 				
-			\subsection*{User Interface}
+			\subsubsection{User Interface}
 				The user interface is likely to be used by students and staff alike, and many visitors to the campus, the interface therefore should be friendly and easy to use for all ages. The interface should include functionality for users to login and create personal profiles
 				so that they can use the rewards system and access other functionality. There should also be different interface for administrative users who must be able to create point of interest and update activities and update and capture location data.
 	\newpage	
-	\section*{Functional Requirements}
+	\subsection{Functional Requirements}
 		Listed below are non-trivial use cases in order ranging from critical through nice-to-have. The logical structure of the data is contained at the end of the section.
 		
-			\subsection*{Use Case Name: Navigate user to required location}
+			\subsubsection{Use Case Name: Navigate user to required location}
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -149,7 +148,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Postcondition: client device recieves navigational information to destination.
 				\end{enumerate}
 				
-			\subsection*{Use Case Name: allow users the ability to save a location}
+			\subsubsection{Use Case Name: allow users the ability to save a location}
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -159,7 +158,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Postcondition: client device displays storage of location by showing an icon over the users current position.
 				\end{enumerate}
 				
-			\subsection*{Use Case Name: Display metadata with information regarding points of interest}
+			\subsubsection{Use Case Name: Display metadata with information regarding points of interest}
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -169,7 +168,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Postcondition: client device displays popup of information regarding the point/points of interest.
 				\end{enumerate}
 				
-			\subsection*{Use Case Name: Give user an ETA to destination}
+			\subsubsection{Use Case Name: Give user an ETA to destination}
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -179,7 +178,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Postcondition: client device recieves and displays estimated time of arrival at the destination.
 				\end{enumerate}
 				
-			\subsection*{Use Case Name: providing information about venues and activities }
+			\subsubsection{Use Case Name: providing information about venues and activities }
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -189,7 +188,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Postcondition: client device recieves and displays information regarding the requested activities.
 				\end{enumerate}
 				
-			\subsection*{Use Case Name: provide special routes for users with disabilities}
+			\subsubsection{Use Case Name: provide special routes for users with disabilities}
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -199,7 +198,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Postcondition: client device recieves and displays information regarding the optimal navigational route.
 				\end{enumerate}
 				
-			\subsection*{Use Case Name:Administrative, create points of interest}
+			\subsubsection{Use Case Name:Administrative, create points of interest}
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -209,7 +208,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 				\item Postcondition: client device recieves notification of successful creation of a point of interest, which is then displayed in naviigational information.
 				\end{enumerate}
 				
-			\subsection*{Use Case Name:collecting and viewing rewards}
+			\subsubsection{Use Case Name:collecting and viewing rewards}
 				\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 				\item Xref????  %needed or even necessary?
@@ -222,7 +221,7 @@ The class of COS 301 2017 have been assigned the NavUP project, an application t
 			
 			
 		
-	\section*{Non-Functional Requirements}
-		Non-Functional Requirements
+	\subsection{Non-Functional Requirements}
+		\section {Non-Functional Requirements}
 
 \end{document}
