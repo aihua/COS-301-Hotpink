@@ -2,11 +2,12 @@
 %Latex Document made by Team HotPink for SRS, Round 1, Assignment 1, COS 301 2017
 %
 
-\documentclass[12pt,a4paper]{report}
+\documentclass[11pt,a4paper]{report}
 
 \title{Software Requirements Specification \\ NavUP \\ COS 301 \\ Team: Hotpink}
-\date{Friday, February 24, 2017}
-\author{Gregory Austin 14039712 \\ Stephanie Groutsch 14293324 \\ Timothy Kirker 11152402 \\ Drew Langley 11039753 \\ Xoliswa Ntshingila 13410378 \\ Melvin Zitha 12138747}
+\date{Friday, February 17, 2017}
+\author{Gregory Austin 14039712 \\ Stephanie Groutsch 14293324 \\ Timothy Kirker 11152402 \\ Drew Langley 11039753 \\ Xoliswa Ntshingila 13410378
+\\ Melvin Zitha 12138747}
 
 
 \usepackage[latin1]{inputenc}
@@ -25,63 +26,63 @@
 	%%%%%%%%%%%%%%%%%%%%%%%		INTRODUCTION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
- \section*{Introduction}
+\chapter*{Introduction}
 The class of COS 301 2017 have been assigned the NavUP project, an application that will assist students in their navigation around the University of Pretoria.
 
-	\subsection*{Purpose}
-	The purpose of this document is to provide a detailed description of the requirements for the NavUP application. It will outline and explain the complete plan for building the NavUP system. 
+	\section*{Purpose}
+	The purpose of this document is to provide a detailed description of the requirements for the NavUP application. It will outline and explain the complete plan for building the NavUP system.
 	Among these explanations will include the constraints for the system and how the system will interact with external applications. The primary purpose of this document is to be used for client approval such that the system may be implemented.
 
-		
-	\subsection*{Scope}
+
+	\section*{Scope}
 	The NavUP mobile application makes use of the Wi-Fi on campus in order to assist the user in finding the optimal route to their destination, whether it be to lecture halls, food courts, ablution facilities or possibly even sport or faculty houses.
 
 	The NavUP system will also include best route capabilities as well as allowing users with disabilities to navigate routes that are accessible to them. The NavUP system will also include points of interest as well as any activities that may be happening on campus.
-	
-	The NavUP mobile application will use the users GPS location, on their phones, in conjunction with all the Wi-Fi routers on campus in order to determine the best route from their starting location. All of the user’s phones should be wifi enabled and have access to University’s Wi-Fi login information.	
-	\subsection*{Definitions, Acronyms and Abbreviations}
-	
-	\subsection*{References}
-	
-	
-	\subsection*{Overview}
+
+	The NavUP mobile application will use the users GPS location, on their phones, in conjunction with all the Wi-Fi routers on campus in order to determine the best route from their starting location. All of the users phones should be wifi enabled and have access to Universitys Wi-Fi login information.
+	\section*{Definitions, Acronyms and Abbreviations}
+
+	\section*{References}
+
+
+	\section*{Overview}
 		
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%		OVERALL DESCRIPTION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{Overall Description}
-	\subsection*{Product Perspective}
-	\subsection*{Product Functions}
+\chapter*{Overall Description}
+	\section*{Product Perspective}
+	\section*{Product Functions}
 	The NavUP mobile application will support a variety of functions namely; navigation, providing information, allowing for users to decide on different routes, achieving goals and personalistaion capabilities.
-\\
-
-The navigation functionality will consist of locating the user and then navigating them to their required location. They will be provided with searching capabilities in order to obtain their required location. Users will then be able to save their destination for future use.
-\\
-
-Information will be provided to users when they are near points of interest. This information will consist of historical and general information regarding venues or landmarks. Information regarding cultural and sporting events that relate to the user will also be shown when appropriate.
-\\
-
-Different routes will be provided based on the users needs. Such routes will include the fastest path from one location to the next. This path will be determined based on the amount of pedestrian traffic. Another route will be provided for special needs users in order to allow them to reach their destination using the easiest path for their disability. 
-\\
-
-Weekly goals will be provided to motivate users to attend all their lectures during the week as well as to increase the amount of steps they take.
-
-\subsection*{User Characteristics}
-There are three main categories of individuals that will make use of the software namely administrators, general users and information providers.
-	\\		
-
-		
-	The administrators will ensure that the software works as intended and will be in charge of maintaining and upgrading the application. These users will need to understand how the system works as well as have programming knowledge in order to work on the software.  
 	\\
 
-	The general users of the system will consist of students, lecturers, guests and university employees. They will only make use of the mobile application. This means that they will not require any knowledge of how the software is implemented however, they will need to have knowledge regarding how to use a mobile phone. These users will mainly use the application to navigate them from one place in the university to the next.
+	The navigation functionality will consist of locating the user and then navigating them to their required location. They will be provided with searching capabilities in order to obtain their required location. Users will then be able to save their destination for future use.
+	\\
+
+	Information will be provided to users when they are near points of interest. This information will consist of historical and general information regarding venues or landmarks. Information regarding cultural and sporting events that relate to the user will also be shown when appropriate.
+	\\
+
+	Different routes will be provided based on the users needs. Such routes will include the fastest path from one location to the next. This path will be determined based on the amount of pedestrian traffic. Another route will be provided for special needs users in order to allow them to reach their destination using the easiest path for their disability.
+	\\
+
+	Weekly goals will be provided to motivate users to attend all their lectures during the week as well as to increase the amount of steps they take.
+
+	\subsection*{User Characteristics}
+	There are three main categories of individuals that will make use of the software namely administrators, general users and information providers.
+	\\
+
+
+	The administrators will ensure that the software works as intended and will be in charge of maintaining and upgrading the application. These users will need to understand how the system works as well as have programming knowledge in order to work on the software.
+	\\
+
+	The general users of the system will consist of students, lecturers, guests and university employees. They will only make use of the mobile application. This means that they will not require any knowledge of how the software is implemented however, they will need to have knowledge regarding how to use a mobile phone. These users will mainly use the application to navigate them 		from one place in the university to the next.
 	\\
 
 	The information providers role will be to inform administrators regarding events taking place at the university as well as to provide information regarding different buildings and landmarks within the university. They will not necessarily make use of the mobile application and will therefore only require knowledge regarding the university itself.
-	
-	\subsection*{Constraints}
+
+	\section*{Constraints}
 	The following are restrictions related to the application:
 		\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
@@ -94,26 +95,27 @@ There are three main categories of individuals that will make use of the softwar
 				\item Size - The application should not require too much memory in order to operate.
 				\end{enumerate}
 	\subsection*{Assumptions and Dependencies}
-
+	
+	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%		REQUIREMENTS SPECIFICATION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{Specific Requirements}
+\chapter*{Requirements Specification}
 
-	\subsection*{External Interface and Architectural Requirements}
+	\section*{External Interface and Architectural Requirements}
 		
-		The NavUP system will be available for use on many platforms and make use of multiple means of newtork links and other extenal interfaces such as GPS and GIS services.
+		The NavUp system will be available for use on many platforms and make use of multiple means of newtork links and other extenal interfaces such as GPS and GIS services.
 		Other requirements such as quality, integration and architectural constraints will also be covered in this section.
 		
-			\subsubsection*{Access Channel Requirements}
-				From the typical user's perspective, us as humans, the NavUp system will largely be focused on mobile devices such as Android or iOS smartphones.
+			\subsection*{Access Channel Requirements}
+				From the typical user's perspective, approximately 60000 students and staff, the NavUp system will largely be focused on mobile devices such as Android or iOS smartphones.
 				These devices, will make use of location services and internet capabilities to send and recieve data to and from access channels and servers using mobile data,
 				WiFi signals, crowdsourcing and geolocation systems such as GPS and GIS. The campus WiFi network will be the main form of system access as the signal
 				strength covers most of the large area the University spans, and will help location accuracy indoors where the mobile devices may struggle to find decent mobile
 				and location based signals.
 				
-			\subsubsection*{Quality Requirements}
+			\subsection*{Quality Requirements}
 				A system of the complexity and scale of NavUP must meet specific quality requirements such as:
 				
 				\begin{enumerate}
@@ -121,22 +123,106 @@ There are three main categories of individuals that will make use of the softwar
 				\item Performance - the system must handle a possbility of over 50000 users simultaneously and still perform important functionality without failure
 				\item Reliability - the sytem should perform its functionality reliably, most importantly the navigational requirements.
 				\item Usability - the system should be easy to use while sporting an aesthetic and ergonomic interface.
-				\item Integrability - the sustem should allow for additional features and modules to be added easily.
+				\item Integrability - the system should allow for additional features and modules to be added easily.
 				\end{enumerate}
 				
-			\subsubsection{Integration Requirements}
-				The NavUP system will be implemented simultaneously by all the students enrolled in COS 301, it is therefore imperative that the system complies blaa %more fluffling needed
-			\subsubsection{Architecture Constraints}
-				The clients ave specified the use of technologies such as GIS, UI/UX, Mobile Development, Wifi Networking, Real-time Data Analysis, Data Streaming and
-				Persistence....
+			\subsection*{Integration Requirements}
+				The NavUp system will be implemented simultaneously by all the students enrolled in COS 301, it is therefore imperative that the system complies to a low coupling and high cohesion standard.
+			\subsection*{Architecture Constraints}
+				The clients ave specified the use of technologies such as GIS, UI/UX, Mobile Development (Android/iOS),  Real-time Data Analysis, Data Streaming and
+				Persistence, and a large focus on the use of WiFi Networking to boost the system's accuracy. A module that supplies targeted delivery of information was also requested hence an intelligent program is also required.
+				
+			\subsection*{User Interface}
+				The user interface is likely to be used by students and staff alike, and many visitors to the campus, the interface therefore should be friendly and easy to use for all ages. The interface should include functionality for users to login and create personal profiles
+				so that they can use the rewards system and access other functionality. There should also be different interface for administrative users who must be able to create point of interest and update activities and update and capture location data.
+	\newpage	
+	\section*{Functional Requirements}
+		Listed below are non-trivial use cases in order ranging from critical through nice-to-have. The logical structure of the data is contained at the end of the section.
 		
-	\subsection*{Functional Requirements}
-		bla
+			\subsection*{Use Case Name: Navigate user to required location}
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user inputs a desired destination
+				\item Precondition: user is logged in and enters the navigation module.
+				\item Basic Path: user inputs a destination which is sent to the navigation module after which an optimal route to the destination is calculated by the navigation and traffic modules and sent back to the client device which will display the infrormation.
+				\item Postcondition: client device recieves navigational information to destination.
+				\end{enumerate}
+				
+			\subsection*{Use Case Name: allow users the ability to save a location}
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user taps/presses  the button for save/share destination.
+				\item Precondition: user is logged in and wishes to save/share a location.
+				\item Basic Path: after pressing the save/share location button, the client device will send data regarding the users current position. This information is persisted to the users database and stored for future use by the user.
+				\item Postcondition: client device displays storage of location by showing an icon over the users current position.
+				\end{enumerate}
+				
+			\subsection*{Use Case Name: Display metadata with information regarding points of interest}
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user navigates passed or near a point of interest.
+				\item Precondition: user is logged in and is currently en route to a destination.
+				\item Basic Path: user navigated passed a point of interest, the client application sends current data to the points of interest module which searches for any nearby points. After which any data gathered is persisted back to the client device which displays it in the form of a popup.
+				\item Postcondition: client device displays popup of information regarding the point/points of interest.
+				\end{enumerate}
+				
+			\subsection*{Use Case Name: Give user an ETA to destination}
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user enters a destination and is en route.
+				\item Precondition: user is logged in and is currently travelling to a desired destination.
+				\item Basic Path: information regarding the users current location and destination are sent to the navigation and traffic modules which calculate the users estimated time of arrival at the destination which is sent back to the client device.
+				\item Postcondition: client device recieves and displays estimated time of arrival at the destination.
+				\end{enumerate}
+				
+			\subsection*{Use Case Name: providing information about venues and activities }
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user requests information about venue, cultural or sporting activities.
+				\item Precondition: user is logged in and requests to view activities.
+				\item Basic Path: the request is sent to the activities database which searches and returns all feasible and viable activities matching the users search parameters, which is then sent back to the clients device.
+				\item Postcondition: client device recieves and displays information regarding the requested activities.
+				\end{enumerate}
+				
+			\subsection*{Use Case Name: provide special routes for users with disabilities}
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user inputs a desired destination.
+				\item Precondition: user is logged in and is disabled, this is set by additional boolean options in the user database.
+				\item Basic Path: the destination and current location of the user is sent to the navigational and traffic modules which calculate an optimal route to the destination, with the addition of special features such as wheelchair ramps.
+				\item Postcondition: client device recieves and displays information regarding the optimal navigational route.
+				\end{enumerate}
+				
+			\subsection*{Use Case Name:Administrative, create points of interest}
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user desires to create a point of interest.
+				\item Precondition: user is logged in as an administrator, this is set by additional boolean options in the user database.
+				\item Basic Path: the create point of interest button is pressed, which displays a popup notification asking for information about the point of interest such as the name and location etc. This information will be persisted to the database and displayed on all devices.
+				\item Postcondition: client device recieves notification of successful creation of a point of interest, which is then displayed in naviigational information.
+				\end{enumerate}
+				
+			\subsection*{Use Case Name:collecting and viewing rewards}
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Xref????  %needed or even necessary?
+				\item Trigger: user completes an activity or reward worthy action such as x amount of steps/meters weekly.
+				\item Precondition: user is logged in and completes an activity.
+				\item Basic Path: a module for the rewards system triggers events during constant monitoring and persistence of data between client and server so as to notify the user when an activity has been completed, the system sends a notification to the client device upon activity completion.
+				\item Postcondition: client recieves notification about completion of an activity and is directed to the third party rewards system.
+				\end{enumerate}
+			
+			
+			
 		
-	\subsection*{Performance Requirements}
-	\subsection*{Design Constraints}
-	\subsection*{Software System Attributes}
-    \subsection*{Other Requirements}
+	\section*{Non-Functional Requirements}
+		Non-Functional Requirements
+
 \end{document}
-
-
