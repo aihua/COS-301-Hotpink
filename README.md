@@ -4,9 +4,9 @@ For this project we have created the requirements necessary for the NavUP system
 ## Motivation
 Every year there is an influx of new students, employees and visitors going to the university. Since the campus is large it is often difficult to find ones way around the university. The NavUP application aims to solve this problem by guiding individuals to their required location.
 ## Contributors
-Gregory Austin
-Stephanie Groutsch
-Timothy Kirker
-Drew Langley
-Xoliswa Ntshingila
-Melvin Zitha
+- Gregory Austin
+- Stephanie Groutsch
+- Timothy Kirker
+- Drew Langley
+- Xoliswa Ntshingila
+- Melvin Zitha
