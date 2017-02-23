@@ -1,0 +1,32 @@
+Regular user – use cases
+1.	Get current location
+2.	Get best route from one destination to another
+3.	Get pedestrian traffic
+4.	Get Activity status
+5.	Get point of interest
+6.	Create a profile for navigation
+7.	Login 
+8.	Request notifications
+9.	Get notification
+10.	Manage notifications 
+***************************************************************************
+Administrative user – use cases
+In addition to the regular user’s functions an administrative user has the following capabilities
+1.	Capture location related data 
+2.	Update location data
+3.	Delete location data
+Location data includes but is not limited to: 
+•	The name of the current location
+•	The history of the current location
+•	The point of interest associated with the location
+
+****************************************************************************
+Modules
+•	Location – Retrieving the user location based on the WI-FI access points.
+•	Navigation – Retrieving the current location, best routes, and pedestrian traffic based on the location of the user.
+•	Navigation Engine – Responsible for all the back-end calculations necessary for the navigation.
+•	Activity –  Calculates and returns activity level of the user e.g. Number of steps taken, number of locations visited, number of attended activities 
+•	Notification - Providing notifications to the users registered for it and the locations which they registered to receive notification for
+•	Resources – Contains all the data maintainable by the administrative users e.g. Location History, the events happening on campus
+•	Access – Providing the front end interface the users will interact with.
+
