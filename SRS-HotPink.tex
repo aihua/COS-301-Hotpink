@@ -47,12 +47,6 @@ right=25mm,
 		\\
  		Further more the  NavUP system also include best route capabilities, optimal routes for users with disabilities, status of the number or people currently on campus based on the number of devices currently connected to the Wi-Fi network,points of interest, activities and events that are happening on campus. It will also track the activity of the user e.g The number of steps 				taken and reward the user based on the goals  they have achieved.
 
-	\section{Definitions, Acronyms and Abbreviations}
-	
-
-	\section{References}
-
-
 	\section{Overview}
 		These are the chapters that follow. The Overall description chapter which describes the overall system , the modules and the interfaces that exist within the system , the system functions, the charecteristics of the users of the system and the system constraints. The Specific Requirements chapter is intended for developers and contains the external interface requirements , 			functional requirements , performance capabilities of the system as well as the design constraints and quality related requirements.
 		The NavUP mobile application makes use of the Wi-Fi on campus in order to assist the user in finding the optimal route to their destination, whether it be to lecture halls, food courts, ablution facilities or possibly even sport or faculty houses.
@@ -80,9 +74,106 @@ right=25mm,
 	\par
 	The application will have to use communication interfaces to determine traffic and the best routes to follow, these communication interfaces will work through the required hardware interfaces. The main operations of the application will work through the user interface, which will work through all the underlying required technologies. These operations include: navigating to a class, 		showing where to go, describing where and what it is you're going to. The DBMS will have to be manually maintained with class and event data or somehow interfaced with an existing DBMS or DSS that the university already has. 
 
-	\section{Functional Requirements Specification}
+
+	\section{Product Functions}
+	The NavUP mobile application will support a variety of functions namely; navigation, providing information, allowing for users to decide on different routes, achieving goals and personalistaion capabilities.
+	\\
+
+	The navigation functionality will consist of locating the user and then navigating them to their required location. They will be provided with searching capabilities in order to obtain their required location. Users will then be able to save their destination for future use.
+	\\
+
+	Information will be provided to users when they are near points of interest. This information will consist of historical and general information regarding venues or landmarks. Information regarding cultural and sporting events that relate to the user will also be shown when appropriate.
+	\\
+
+	Different routes will be provided based on the users needs. Such routes will include the fastest path from one location to the next. This path will be determined based on the amount of pedestrian traffic. Another route will be provided for special needs users in order to allow them to reach their destination using the easiest path for their disability.
+	\\
+
+	Weekly goals will be provided to motivate users to attend all their lectures during the week as well as to increase the amount of steps they take.
+
+	\section{User Characteristics}
+	There are three main categories of individuals that will make use of the software namely administrators, general users and information providers.
+	\\
+
+
+	The administrators will ensure that the software works as intended and will be in charge of maintaining and upgrading the application. These users will need to understand how the system works as well as have programming knowledge in order to work on the software.
+	\\
+
+	The general users of the system will consist of students, lecturers, guests and university employees. They will only make use of the mobile application. This means that they will not require any knowledge of how the software is implemented however, they will need to have knowledge regarding how to use a mobile phone. These users will mainly use the application to navigate them 		from one place in the university to the next.
+	\\
+
+	The information providers role will be to inform administrators regarding events taking place at the university as well as to provide information regarding different buildings and landmarks within the university. They will not necessarily make use of the mobile application and will therefore only require knowledge regarding the university itself.
+
+	\section{Constraints}
+	The following are restrictions related to the application:
+		\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Security  - The users personal information and current location should not be accessible to the public.
+				\item Accuracy - The users location should be found whether the user is indoors or not. The location of the user should also be found in terms of what floor of a building they are on.
+				\item Performance - The system should be able to handle a large amount of users making use of the software at the same time.
+				\item Reliability - The application should still operate when one or more data access points are no longer available.
+				\item Accessibility - The application should be easily accessible to everyone that requires it.
+				\item Usability - The applications interface should be easy to use and understand.
+				\item Size - The application should not require too much memory in order to operate.
+				\end{enumerate}
+	\section{Assumptions and Dependencies}
+	Since the NavUP system is being created for mobile devices, it is assumed that all those who require the application, will have access to a mobile device. It is then assumed that these devices will have the required capabilities necessary to run the application. Such dependencies include built in WiFi, GPS and cellular connectivity as well as the required data/airtime.
+\\
+\par
+Assumed users will be registered students of the University of Pretoria thereby having access to their modules and class data for navigating when required with minimal input from the user. This depends on access to students data for the DBMS.
+\\
+\par
+In terms of the usability of the application, it is assumed that users will have knowledge regarding how to use mobile devices and applications on such devices.
+\\
+\par
+The assumption relating to accuracy includes the belief that the application will be up to date with the latest information in terms of venues, landmarks and events. This assumes that there will always be someone maintaining and updating the applications data, or a DBMS that is interfaced with the university DBMS.  
+\\
+\par
+An assumption in terms of the systems performance includes the idea that it will still be able to function when a large amount of users are making use of the application at the same time. This depends on server capacity as well as solid code structures that are efficient as well as safe. 
+
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%		REQUIREMENTS SPECIFICATION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\chapter{Requirements Specification}		
+
+	\section{External Interface and Architectural Requirements}
+		
+		The NavUP system will be available for use on many platforms and make use of multiple means of newtork links and other extenal interfaces such as GPS and GIS services.
+		Other requirements such as quality, integration and architectural constraints will also be covered in this section.
+		
+			\subsubsection{Access Channel Requirements}
+				From the typical user's perspective, approximately 60000 students and staff, the NavUP system will largely be focused on mobile devices such as Android or iOS smartphones.
+				These devices, will make use of location services and internet capabilities to send and recieve data to and from access channels and servers using mobile data,
+				Wi-Fi signals, crowdsourcing and geolocation systems such as GPS and GIS. The campus Wi-Fi network will be the main form of system access as the signal
+				strength covers most of the large area the University spans, and will help location accuracy indoors where the mobile devices may struggle to find decent mobile
+				and location based signals.
+				
+			\subsubsection{Quality Requirements}
+				A system of the complexity and scale of NavUP must meet specific quality requirements such as:
+				
+				\begin{enumerate}
+				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+				\item Performance - the system must handle a possbility of over 50000 users simultaneously and still perform important functionality without failure
+				\item Reliability - the sytem should perform its functionality reliably, most importantly the navigational requirements.
+				\item Usability - the system should be easy to use while sporting an aesthetic and ergonomic interface.
+				\item Integrability - the system should allow for additional features and modules to be added easily.
+				\end{enumerate}
+				
+			\subsubsection{Integration Requirements}
+				The NavUP system will be implemented simultaneously by all the students enrolled in COS 301, it is therefore imperative that the system complies to a low coupling and high cohesion standard.
+			\subsubsection{Architecture Constraints}
+				The clients ave specified the use of technologies such as GIS, UI/UX, Mobile Development (Android/iOS),  Real-time Data Analysis, Data Streaming and
+				Persistence, and a large focus on the use of Wi-Fi Networking to boost the system's accuracy. A module that supplies targeted delivery of information was also requested hence an intelligent program is also required.
+				
+			\subsubsection{User Interface}
+				The user interface is likely to be used by students and staff alike, and many visitors to the campus, the interface therefore should be friendly and easy to use for all ages. The interface should include functionality for users to login and create personal profiles
+				so that they can use the rewards system and access other functionality. There should also be different interface for administrative users who must be able to create point of interest and update activities and update and capture location data.
+	\newpage	
+	\section{Functional Requirements}
+		
 	%%%%%%%%%%%%%%%%%%%%%%======================   REQUIREMENTS    ================%%%%%%%%%%%%%%%%
-	\subsection{Requirements}
+	\subsection{Requirements Specification}
 		
 		\subsubsection{REQ1: Navigation}
 			Provide navigation functionality.
@@ -543,103 +634,6 @@ right=25mm,
 				
 
 		
-	\section{Product Functions}
-	The NavUP mobile application will support a variety of functions namely; navigation, providing information, allowing for users to decide on different routes, achieving goals and personalistaion capabilities.
-	\\
-
-	The navigation functionality will consist of locating the user and then navigating them to their required location. They will be provided with searching capabilities in order to obtain their required location. Users will then be able to save their destination for future use.
-	\\
-
-	Information will be provided to users when they are near points of interest. This information will consist of historical and general information regarding venues or landmarks. Information regarding cultural and sporting events that relate to the user will also be shown when appropriate.
-	\\
-
-	Different routes will be provided based on the users needs. Such routes will include the fastest path from one location to the next. This path will be determined based on the amount of pedestrian traffic. Another route will be provided for special needs users in order to allow them to reach their destination using the easiest path for their disability.
-	\\
-
-	Weekly goals will be provided to motivate users to attend all their lectures during the week as well as to increase the amount of steps they take.
-
-	\section{User Characteristics}
-	There are three main categories of individuals that will make use of the software namely administrators, general users and information providers.
-	\\
-
-
-	The administrators will ensure that the software works as intended and will be in charge of maintaining and upgrading the application. These users will need to understand how the system works as well as have programming knowledge in order to work on the software.
-	\\
-
-	The general users of the system will consist of students, lecturers, guests and university employees. They will only make use of the mobile application. This means that they will not require any knowledge of how the software is implemented however, they will need to have knowledge regarding how to use a mobile phone. These users will mainly use the application to navigate them 		from one place in the university to the next.
-	\\
-
-	The information providers role will be to inform administrators regarding events taking place at the university as well as to provide information regarding different buildings and landmarks within the university. They will not necessarily make use of the mobile application and will therefore only require knowledge regarding the university itself.
-
-	\section{Constraints}
-	The following are restrictions related to the application:
-		\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Security  - The users personal information and current location should not be accessible to the public.
-				\item Accuracy - The users location should be found whether the user is indoors or not. The location of the user should also be found in terms of what floor of a building they are on.
-				\item Performance - The system should be able to handle a large amount of users making use of the software at the same time.
-				\item Reliability - The application should still operate when one or more data access points are no longer available.
-				\item Accessibility - The application should be easily accessible to everyone that requires it.
-				\item Usability - The applications interface should be easy to use and understand.
-				\item Size - The application should not require too much memory in order to operate.
-				\end{enumerate}
-	\section{Assumptions and Dependencies}
-	Since the NavUP system is being created for mobile devices, it is assumed that all those who require the application, will have access to a mobile device. It is then assumed that these devices will have the required capabilities necessary to run the application. Such dependencies include built in WiFi, GPS and cellular connectivity as well as the required data/airtime.
-\\
-\par
-Assumed users will be registered students of the University of Pretoria thereby having access to their modules and class data for navigating when required with minimal input from the user. This depends on access to students data for the DBMS.
-\\
-\par
-In terms of the usability of the application, it is assumed that users will have knowledge regarding how to use mobile devices and applications on such devices.
-\\
-\par
-The assumption relating to accuracy includes the belief that the application will be up to date with the latest information in terms of venues, landmarks and events. This assumes that there will always be someone maintaining and updating the applications data, or a DBMS that is interfaced with the university DBMS.  
-\\
-\par
-An assumption in terms of the systems performance includes the idea that it will still be able to function when a large amount of users are making use of the application at the same time. This depends on server capacity as well as solid code structures that are efficient as well as safe. 
-
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%%%%%%%%%%%%%		REQUIREMENTS SPECIFICATION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\chapter{Requirements Specification}		
-
-	\section{External Interface and Architectural Requirements}
-		
-		The NavUP system will be available for use on many platforms and make use of multiple means of newtork links and other extenal interfaces such as GPS and GIS services.
-		Other requirements such as quality, integration and architectural constraints will also be covered in this section.
-		
-			\subsubsection{Access Channel Requirements}
-				From the typical user's perspective, approximately 60000 students and staff, the NavUP system will largely be focused on mobile devices such as Android or iOS smartphones.
-				These devices, will make use of location services and internet capabilities to send and recieve data to and from access channels and servers using mobile data,
-				Wi-Fi signals, crowdsourcing and geolocation systems such as GPS and GIS. The campus Wi-Fi network will be the main form of system access as the signal
-				strength covers most of the large area the University spans, and will help location accuracy indoors where the mobile devices may struggle to find decent mobile
-				and location based signals.
-				
-			\subsubsection{Quality Requirements}
-				A system of the complexity and scale of NavUP must meet specific quality requirements such as:
-				
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Performance - the system must handle a possbility of over 50000 users simultaneously and still perform important functionality without failure
-				\item Reliability - the sytem should perform its functionality reliably, most importantly the navigational requirements.
-				\item Usability - the system should be easy to use while sporting an aesthetic and ergonomic interface.
-				\item Integrability - the system should allow for additional features and modules to be added easily.
-				\end{enumerate}
-				
-			\subsubsection{Integration Requirements}
-				The NavUP system will be implemented simultaneously by all the students enrolled in COS 301, it is therefore imperative that the system complies to a low coupling and high cohesion standard.
-			\subsubsection{Architecture Constraints}
-				The clients ave specified the use of technologies such as GIS, UI/UX, Mobile Development (Android/iOS),  Real-time Data Analysis, Data Streaming and
-				Persistence, and a large focus on the use of Wi-Fi Networking to boost the system's accuracy. A module that supplies targeted delivery of information was also requested hence an intelligent program is also required.
-				
-			\subsubsection{User Interface}
-				The user interface is likely to be used by students and staff alike, and many visitors to the campus, the interface therefore should be friendly and easy to use for all ages. The interface should include functionality for users to login and create personal profiles
-				so that they can use the rewards system and access other functionality. There should also be different interface for administrative users who must be able to create point of interest and update activities and update and capture location data.
-	\newpage	
-	\section{Functional Requirements}
-		Listed below are non-trivial use cases in order ranging from critical through nice-to-have. The logical structure of the data is contained at the end of the section.
 		
 			
 
