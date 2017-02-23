@@ -24,6 +24,7 @@ right=25mm,
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{float}
+
 \DeclareGraphicsExtensions{.png}
 \DeclareGraphicsExtensions{.jpg}
 
@@ -194,13 +195,6 @@ An assumption in terms of the systems performance includes the idea that it will
 			\end{tabular}
 		\end{table}
 
-		\graphicspath{ {./Images/User/} }
-		\begin{figure}[h]
-		\caption{Use Case Diagram -  Navigate user to their desired location}
-		\includegraphics[width = 300px]{GetDesiredLocation.png}
-		
-		\end{figure}
-
 		
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC2    ================%%%%%%%%%%%%%%%%
@@ -233,12 +227,7 @@ An assumption in terms of the systems performance includes the idea that it will
 			\end{tabular}
 		\end{table}
 		
-		\graphicspath{ {./Images/User/} }
-		\begin{figure}[h]
-		\caption{Use Case Diagram -   Obtain Current Location}
-		\includegraphics[width = 300px]{ObtainCurrentLocation.png}
-		\end{figure}
-
+		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC3    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ1: Search for Location}
 			\begin{enumerate}
@@ -271,11 +260,6 @@ An assumption in terms of the systems performance includes the idea that it will
 			\end{tabular}
 		\end{table}
 
-	 \graphicspath{ {./Images/User/} }
-		\begin{figure}[h]
-		\caption{Use Case Diagram -    Search for location}
-		\includegraphics[width = 300px]{SearchForLocation.png}
-		\end{figure}
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC4    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ1: Calculate the estimated time of arrival}
@@ -305,12 +289,7 @@ An assumption in terms of the systems performance includes the idea that it will
 				\\ \hline
 			\end{tabular}
 		\end{table}
- 		\graphicspath{ {./Images/User/} }
-		\begin{figure}[h]
-		\caption{Use Case Diagram -  Calculate the estimated time of arrival}
-		\includegraphics[width = 300px]{CalculateETA.png}
-		\end{figure}
-		
+
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC5    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ2: Display metadata with information regarding venues and points of interest}
 			\begin{enumerate}
@@ -394,12 +373,7 @@ An assumption in terms of the systems performance includes the idea that it will
 				\\ \hline
 			\end{tabular}
 		\end{table}
-		\graphicspath{ {./Images/User/} }
-		\begin{figure}[h]
-		\caption{Use Case Diagram -  Provide special routes for users with disabilities}
-		\includegraphics[width = 300px]{getPreferedRoute.png}
-		\end{figure}
-		
+
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC8    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ3: Provide the fastest route to a destination}
 			\begin{enumerate}
@@ -458,7 +432,7 @@ An assumption in terms of the systems performance includes the idea that it will
 				\\ \hline
 			\end{tabular}
 		\end{table}
-		
+
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC10    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ5: Collecting and viewing rewards}
 			\begin{enumerate}
@@ -484,6 +458,7 @@ An assumption in terms of the systems performance includes the idea that it will
 			\end{tabular}
 		\end{table}
 
+		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC11    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ6: Allow users the ability to save a location(drop a pin)}
 			\begin{enumerate}
@@ -511,6 +486,7 @@ An assumption in terms of the systems performance includes the idea that it will
 				\\ \hline
 			\end{tabular}
 		\end{table}
+	
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC12    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ7: Add or remove a venue}
@@ -540,6 +516,10 @@ An assumption in terms of the systems performance includes the idea that it will
 			\end{tabular}
 		\end{table}
 		
+	 
+		
+
+
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC13    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ7: Add or remove event}
 			\begin{enumerate}
@@ -598,7 +578,7 @@ An assumption in terms of the systems performance includes the idea that it will
 				\\ \hline
 			\end{tabular}
 		\end{table}
-		\newpage
+		
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC15    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ7: Add or remove goals}
@@ -627,7 +607,7 @@ An assumption in terms of the systems performance includes the idea that it will
 				\\ \hline
 			\end{tabular}
 		\end{table}
-\newpage
+		
 		\graphicspath{ {./Images/AdjacencyMatrix/} }
 		\begin{figure}
 		\includegraphics[width=16cm, height=4cm]{Adjaceny-Matrix-1.png}
@@ -638,7 +618,9 @@ An assumption in terms of the systems performance includes the idea that it will
 		\includegraphics[width=16cm, height=4cm]{Adjacency-Matrix-2.png}
 		\caption{Traceability Matrix 2}
 		\end{figure}
-		
+\newpage
+\input{./UseCaseDiagrams.tex}
+
 	\subsection{Quality Requirements}
 				A system of the complexity and scale of NavUP must meet specific quality requirements such as:
 				
@@ -666,7 +648,7 @@ An assumption in terms of the systems performance includes the idea that it will
 				Persistence,  and a large focus on the use of Wi-Fi Networking to boost the system's accuracy. A module that supplies targeted delivery of information was also requested hence an intelligent program is also required.
 				
 			\subsection{User Interface}
-				The user interface is likely to be used by students and staff alike,  and many visitors to the campus,  the interface therefore should be friendly and easy to use for all ages. The interface should include functionality for users to login and create personal profiles
+				The user interface is likely to be used by students and staff alike,  and many visitors to the campus,  the interface therefore should be friendly and easy to use for all ages. The interface should include functionality for users to login and create 						personal profiles
 				so that they can use the rewards system and access other functionality. There should also be different interface for administrative users who must be able to create point of interest and update activities and update and capture location data.
 
 
