@@ -2,7 +2,7 @@
 %Latex Document made by Team HotPink for SRS, Round 1, Assignment 1, COS 301 2017
 %
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper]{report}
 \usepackage{geometry}
  \geometry{
  a4paper,
@@ -35,55 +35,515 @@ right=25mm,
 	%%%%%%%%%%%%%%%%%%%%%%%		INTRODUCTION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Introduction}
-	\subsection{Purpose}
+\chapter{Introduction}
+	\section{Purpose}
 	The purpose of this document is to provide a detailed description of the requirements for the NavUP application, a navigation application which is intended to assist students , staff and the  public with navigating the University of Pretoria. Additionally it will outline and explain the complete plan for building the NavUP system.The explanations include the constraints for the system and how the system will interact with external applications. Ultimately this document is to be used for client approval such that the system may be implemented.
 
-	\subsection{Scope}
-<<<<<<< HEAD
-The NavUP mobile application makes use of the Wi-Fi on campus in order to assist the user in finding the route to their destination from their current location or from a location which is on the University of Pretoria facilities this includes but is not limited to lecture halls, food courts, ablution facilities or possibly even sport or faculty houses. 
-\\
+	\section{Scope}
 
-The NavUP mobile application will use the users GPS location, on their smart devices, in conjunction with all the Wi-Fi routers on campus in order to determine the best route from their starting location. As a result the users require Wi-Fi enabled devices and login credentials to the Universities Wi-Fi network.The system will not be able to navigate a user from a location which is not within the range of the campus Wi-Fi.
-\\
+		The NavUP mobile application makes use of the Wi-Fi on campus in order to assist the user in finding the route to their destination from their current location or from a location which is on the University of Pretoria facilities this includes but is not limited to lecture halls, food courts, ablution facilities or possibly even sport or faculty houses. 
+		\\
+		The NavUP mobile application will use the users GPS location, on their smart devices, in conjunction with all the Wi-Fi routers on campus in order to determine the best route from their starting location. As a result the users require Wi-Fi enabled devices and login credentials to the Universities Wi-Fi network.The system will not be able to navigate a user from a location which is 			not within the range of the campus Wi-Fi.
+		\\
+ 		Further more the  NavUP system also include best route capabilities, optimal routes for users with disabilities, status of the number or people currently on campus based on the number of devices currently connected to the Wi-Fi network,points of interest, activities and events that are happening on campus. It will also track the activity of the user e.g The number of steps 				taken and reward the user based on the goals  they have achieved.
 
- Further more the  NavUP system also include best route capabilities, optimal routes for users with disabilities, status of the number or people currently on campus based on the number of devices currently connected to the Wi-Fi network,points of interest, activities and events that are happening on campus. It will also track the activity of the user e.g The number of steps taken and reward the user based on the goals  they have achieved.
-
-	\subsection{Definitions, Acronyms and Abbreviations}
+	\section{Definitions, Acronyms and Abbreviations}
 	
 
-	\subsection{References}
+	\section{References}
 
 
-	\subsection{Overview}
-	These are the chapters that follow. The Overall description chapter which describes the overall system , the modules and the interfaces that exist within the system , the system functions, the charecteristics of the users of the system and the system constraints. The Specific Requirements chapter is intended for developers and contains the external interface requirements , functional requirements , performance capabilities of the system as well as the design constraints and quality related requirements.
-=======
-	The NavUP mobile application makes use of the Wi-Fi on campus in order to assist the user in finding the optimal route to their destination, whether it be to lecture halls, food courts, ablution facilities or possibly even sport or faculty houses.
-	\\
-\par
-	The NavUP system will also include best route capabilities as well as allowing users with disabilities to navigate routes that are accessible to them. The NavUP system will also include points of interest as well as any activities that may be happening on campus.
-\\
-\par
-	The NavUP mobile application will use the users GPS location, on their phones, in conjunction with all the Wi-Fi routers on campus in order to determine the best route from their starting location. All of the users phones should be wifi enabled and have access to Universitys Wi-Fi login information.
+	\section{Overview}
+		These are the chapters that follow. The Overall description chapter which describes the overall system , the modules and the interfaces that exist within the system , the system functions, the charecteristics of the users of the system and the system constraints. The Specific Requirements chapter is intended for developers and contains the external interface requirements , 			functional requirements , performance capabilities of the system as well as the design constraints and quality related requirements.
+		The NavUP mobile application makes use of the Wi-Fi on campus in order to assist the user in finding the optimal route to their destination, whether it be to lecture halls, food courts, ablution facilities or possibly even sport or faculty houses.
+		\\
+		\par
+		The NavUP system will also include best route capabilities as well as allowing users with disabilities to navigate routes that are accessible to them. The NavUP system will also include points of interest as well as any activities that may be happening on campus.
+		\\
+		\par
+		The NavUP mobile application will use the users GPS location, on their phones, in conjunction with all the Wi-Fi routers on campus in order to determine the best route from their starting location. All of the users phones should be wifi enabled and have access to Universitys Wi-Fi login information.
 	
 		
->>>>>>> origin/master
+
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%		OVERALL DESCRIPTION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Overall Description}
-	\subsection{Product Perspective}
+\chapter{Overall Description}
+	\section{Product Perspective}
 	Similar to existing navigation applications such as: Google Maps, Apple Maps and Waze, NavUP is a standalone mobile application that acts as a campus navigation system which will be open for all students to use. It encompasses all technologies, which will be required for the necessary functionality as described in the product functions section. 
-\\
-\par
-The application will be implemented using relevant hardware interfaces such as, but not necessarily, Wi-Fi, Cellular Data and GPS. Implementation of the hardware interfaces will require already existing software interfaces/OS interfaces to access data from the hardware interfaces relating to the main functionality of the NavUP application. 
-\\
-\par
-The application will have to use communication interfaces to determine traffic and the best routes to follow, these communication interfaces will work through the required hardware interfaces. The main operations of the application will work through the user interface, which will work through all the underlying required technologies. These operations include: navigating to a class, showing where to go, describing where and what it is you’re going to. The DBMS will have to be manually maintained with class and event data or somehow interfaced with an existing DBMS or DSS that the university already has. 
+	\\
+	\par
+	The application will be implemented using relevant hardware interfaces such as, but not necessarily, Wi-Fi, Cellular Data and GPS. Implementation of the hardware interfaces will require already existing software interfaces/OS interfaces to access data from the hardware interfaces relating to the main functionality of the NavUP application. 
+	\\
+	\par
+	The application will have to use communication interfaces to determine traffic and the best routes to follow, these communication interfaces will work through the required hardware interfaces. The main operations of the application will work through the user interface, which will work through all the underlying required technologies. These operations include: navigating to a class, 		showing where to go, describing where and what it is you're going to. The DBMS will have to be manually maintained with class and event data or somehow interfaced with an existing DBMS or DSS that the university already has. 
 
-	\subsection{Product Functions}
+	\section{Functional Requirements Specification}
+	%%%%%%%%%%%%%%%%%%%%%%======================   REQUIREMENTS    ================%%%%%%%%%%%%%%%%
+	\subsection{Requirements}
+		
+		\subsubsection{REQ1: Navigation}
+			Provide navigation functionality.
+			
+		\subsubsection{REQ2: Provide Information}
+			Provide information regarding points of interest and sporting and cultural activities.
+			
+		\subsubsection{REQ3: Provide Different Routes}
+			Provide different routes based on the user's needs.
+		
+		\subsubsection{REQ4: User Profiles}
+			The system should allow users and administrators login capability.
+			
+		\subsubsection{REQ5: Weekly goals}
+			Provide weekly goals based on the number of steps or distance travelled by the user.
+			
+		\subsubsection{REQ6: Personalization}
+			Users should be allowed to save personalized information as well as recieve it.
+			
+		\subsubsection{REQ7: Maintenance}
+			The system should allow administrators the ability to update it.
+			
+	%%%%%%%%%%%%%%%%%%%%%%======================   USE CASES   ================%%%%%%%%%%%%%%%%
+	\subsection{Use Cases}
+	%%%%%%%%%%%%%%%%%%%%%%======================   UC1    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ1: Navigate user to their desired location}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC1
+			\item Precondition: User is running the NavUP application and enters the navigation module
+			\item Postcondition: Client device recieves and displays navigational information to destination.
+			\item Actor-System interaction model:
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC1 -  Navigate user to their desired location}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks on the navigation \\ button in the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system displays the navigation page to \\ the user\end{tabular}
+				 \\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The user clicks on the Get Directions button\\ on the Navigation page\end{tabular} & 
+				\begin{tabular}[c]{@{}l@{}}5. The system prompts the user for their \\ required destination\end{tabular}
+				\\ \hline
+				6. User enters desired destination & 
+				\begin{tabular}[c]{@{}l@{}}7. The system calculates and displays the route\\ and directions to the destination\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC2    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ1: Obtain Current Location}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC2
+			\item Precondition: User is running the NavUP application and requires their location
+			\item Postcondition: Client device recieves and displays the user's current location data.
+			\item Actor-System interaction model:
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC2 -  Obtain Current Location}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks on the navigation \\ button in the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system displays the navigation page to \\ the user\end{tabular}
+				 \\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The user clicks on the Get Location button\\ on the Navigation page\end{tabular} & 
+				\begin{tabular}[c]{@{}l@{}}5. The system displays the user's location
+				\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC3    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ1: Search for Location}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC3
+			\item Precondition: User is running the NavUP application and searches for a given location.
+			\item Postcondition: Information regarding  the searched location os provided.
+			\item Actor-System interaction model:
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC3 -  Search for location}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks on the navigation \\ button in the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system displays the navigation page to \\ the user\end{tabular}
+				 \\ \hline
+				\begin{tabular}[c]{@{}l@{}}The user clicks on the Search for Location\\ button on the Navigation page\end{tabular} & 
+				\begin{tabular}[c]{@{}l@{}}5. The system prompts the user for the \\ location they wish to search\end{tabular}
+				\\ \hline
+				6. User enters desired location & 
+				\begin{tabular}[c]{@{}l@{}}7. The system provides information regarding \\ the searched location\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC4    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ1: Calculate the estimated time of arrival}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC4
+			\item Precondition: User is running the NavUP application and currently travelling t o a destination.
+			\item Postcondition: Client device recieves and displays the estimated time of arrival.
+			\item Actor-System interaction model:
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC4 - Calculate the estimated tmie of arrival}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks on the navigation \\ button in the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system displays the navigation page to \\ the user\end{tabular}
+				 \\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The user clicks on the Estimated Time of \\Arrival button on the Navigation page\end{tabular} & 
+				\begin{tabular}[c]{@{}l@{}}5. The system displays the estimated time \\of arrival to the user\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC5    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ2: Display metadata with information regarding venues and points of interest}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC5
+			\item Precondition: User is running the NavUP application and currently travelling t o a destination.
+			\item Postcondition: Client device displays a popup of information a point(s)of interest.
+			\item Actor-System interaction model:
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC5 - Display metadata with information regarding venues and points of interest}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user travels past a point of interest\\ or venue\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system displays information related to the\\point of interest or venue to the user\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC6    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ2: Provide information regarding sports and cultural activities}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC7
+			\item Precondition: The user is running the application and requests to view activities.
+			\item Postcondition: Client device recieves and displays information regarding the requested activities.
+			\item Actor-System interaction model:
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC6 -  Provide information regarding sports and cultural activities}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks the Activities button on \\the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system displays information regarding\\ sporting and cultural activities that relate to \\the user\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC7    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ3: Provide special routes for users with disabilities}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC7
+			\item Precondition: The user is running the application and requires a special route as they have a disability.
+			\item Postcondition: Client device recieves and displays information regarding the optimal navigational route for the special needs user.
+			\item Actor-System interaction model:
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC7 -  Provide special routes for users with disabilities}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks the Routes button on \\the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system prompts the user for \\ a destination\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The user enters a destination\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5. The system prompts the user for \\ the type of route they require\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}6. The user selects the ''special needs'' option\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}7. The system displays the route and directions\\ to the destination.\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC8    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ3: Provide the fastest route to a destination}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC8
+			\item Precondition: The user running the application and requires the fastest route from one location to the next.
+			\item Postcondition: Client device recieves and displays information regarding the optimal navigational route.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC8 -  Provide the fastest route to a destination}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks the Routes button on \\the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system prompts the user for \\ a destination\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The user enters a destination\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5. The system prompts the user for \\ the type of route they require\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}6. The user selects the ''fastest path'' option\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}7. The system displays the route and\\directions to the destination.\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC9    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ4: The user logs into the application}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC9
+			\item Precondition: The user wishes to log into the application.
+			\item Postcondition: Client device logs the user into the system and displays the user's login page.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC9 - The user logs into the application}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the main window
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks the Login button on \\the main menu\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system prompts the user to\\ enter the required login details\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The user enters their login information\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5. The system logs the user into the\\ application and displays the user's user page\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC10    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ5: Collecting and viewing rewards}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC10
+			\item Precondition: The user is logged in and completes an activity.
+			\item Postcondition: Client device recieves a notification concerning the completion of and activity and is directed to the third party rewards system.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC10 - Collecting and viewing rewards}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the user's page
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user completes an activity\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system notifies the user concerning\\ the completion of an activity and directs\\ the user to the third party rewards \\system \end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC11    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ6: Allow users the ability to save a location(drop a pin)}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC11
+			\item Precondition: The user is logged in and wishes to save their location.
+			\item Postcondition: Client device displays storage of a location by showing an icon over the specified position.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC11 - The user logs into the application}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the user's page.
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The user clicks the Save Location\\ button\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system prompts the user to \\enter a description for the saved location\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The user enters a description for the\\ saved location and confirms the action\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5. The system saves the location and \\displays an icon over the location\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC12    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ7: Add or remove a venue}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC12
+			\item Precondition: The administrator is logged in and wishes to add or remove a venue.
+			\item Postcondition: The system is updated with the added venue.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC12 - Add or remove venue}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the administrator's page.
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The adminstrator clicks on the \\add/remove venue button\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system prompts the for the location\\ and name of the new venue.\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The administrator enters the required\\ information and confirms the action\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5. The system saves and adds the given\\ venue\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC13    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ7: Add or remove event}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC13
+			\item Precondition: The administrator is logged in and wishes to add or remove an event.
+			\item Postcondition: The system is updated with the added event.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC13 - Add or remove event}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the administrator's page.
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The adminstrator clicks on the \\add/remove event button\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system prompts the for the\\ location and name of the new event.\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The administrator enters the required \\ information and confirms the action\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5. The system saves and adds the given\\ event\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC14    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ7: Update Information}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC12
+			\item Precondition: The administrator is logged in and wishes to update the information of a venue or landmark.
+			\item Postcondition: The system is updated with the added new information regarding the venue or landmark.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC14 - Update Information}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the administrator's page.
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The adminstrator clicks on the update \\information button\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3.The system prompts the administrator\\ for the name or the venue or landmark for which the\\ administrator wants to update the information.\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The administrator enters the required\\ information and confirms the action\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5.The system prompts the administrator\\ for the new updated information for the venue.\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}6. The administrator enters the required\\ information and confirms the action\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}7.The system updates the application with\\ the new information\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		
+		%%%%%%%%%%%%%%%%%%%%%%======================   UC15    ================%%%%%%%%%%%%%%%%
+		\subsubsection{Use Case for REQ7: Add or remove goals}
+			\begin{enumerate}
+			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
+			\item Use Case ID: UC15
+			\item Precondition: The administrator is logged in and wishes to add or remove a goal.
+			\item Postcondition: The system is updated with the new goals information.
+			\end{enumerate}
+
+		\begin{table}[htb]
+			\centering
+			\caption{UC15 - Add or remove goals}
+			\label{my-label}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Actor: User} &
+				\textbf{System: NavUP}
+`				 \\ \hline  & 1. The NavUP system displays the administrator's page.
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}2. The adminstrator clicks on the\\ add/remove goals button\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}3. The system prompts the for the\\ requirements and name of the new goals etc.\end{tabular}
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}4. The administrator enters the required\\ information and confirms the action\end{tabular}       &
+				\begin{tabular}[c]{@{}l@{}}5. The system updates the application with\\ the new ionformation\end{tabular}
+				\\ \hline
+			\end{tabular}
+		\end{table}
+				
+
+		
+	\section{Product Functions}
 	The NavUP mobile application will support a variety of functions namely; navigation, providing information, allowing for users to decide on different routes, achieving goals and personalistaion capabilities.
 	\\
 
@@ -98,7 +558,7 @@ The application will have to use communication interfaces to determine traffic a
 
 	Weekly goals will be provided to motivate users to attend all their lectures during the week as well as to increase the amount of steps they take.
 
-	\subsection{User Characteristics}
+	\section{User Characteristics}
 	There are three main categories of individuals that will make use of the software namely administrators, general users and information providers.
 	\\
 
@@ -111,7 +571,7 @@ The application will have to use communication interfaces to determine traffic a
 
 	The information providers role will be to inform administrators regarding events taking place at the university as well as to provide information regarding different buildings and landmarks within the university. They will not necessarily make use of the mobile application and will therefore only require knowledge regarding the university itself.
 
-	\subsection{Constraints}
+	\section{Constraints}
 	The following are restrictions related to the application:
 		\begin{enumerate}
 				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
@@ -123,7 +583,7 @@ The application will have to use communication interfaces to determine traffic a
 				\item Usability - The applications interface should be easy to use and understand.
 				\item Size - The application should not require too much memory in order to operate.
 				\end{enumerate}
-	\subsection{Assumptions and Dependencies}
+	\section{Assumptions and Dependencies}
 	Since the NavUP system is being created for mobile devices, it is assumed that all those who require the application, will have access to a mobile device. It is then assumed that these devices will have the required capabilities necessary to run the application. Such dependencies include built in WiFi, GPS and cellular connectivity as well as the required data/airtime.
 \\
 \par
@@ -143,9 +603,9 @@ An assumption in terms of the systems performance includes the idea that it will
 	%%%%%%%%%%%%%%%%%%%%%%%		REQUIREMENTS SPECIFICATION	     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Requirements Specification}
+\chapter{Requirements Specification}		
 
-	\subsection{External Interface and Architectural Requirements}
+	\section{External Interface and Architectural Requirements}
 		
 		The NavUP system will be available for use on many platforms and make use of multiple means of newtork links and other extenal interfaces such as GPS and GIS services.
 		Other requirements such as quality, integration and architectural constraints will also be covered in this section.
@@ -178,104 +638,9 @@ An assumption in terms of the systems performance includes the idea that it will
 				The user interface is likely to be used by students and staff alike, and many visitors to the campus, the interface therefore should be friendly and easy to use for all ages. The interface should include functionality for users to login and create personal profiles
 				so that they can use the rewards system and access other functionality. There should also be different interface for administrative users who must be able to create point of interest and update activities and update and capture location data.
 	\newpage	
-	\subsection{Functional Requirements}
+	\section{Functional Requirements}
 		Listed below are non-trivial use cases in order ranging from critical through nice-to-have. The logical structure of the data is contained at the end of the section.
 		
-			\subsubsection{Use Case Name: Navigate user to required location}
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user inputs a desired destination
-				\item Precondition: user is logged in and enters the navigation module.
-				\item Basic Path: user inputs a destination which is sent to the navigation module after which an optimal route to the destination is calculated by the navigation and traffic modules and sent back to the client device which will display the infrormation.
-				\item Postcondition: client device recieves navigational information to destination.
-				\end{enumerate}
-				
-			\subsubsection{Use Case Name: allow users the ability to save a location}
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user taps/presses  the button for save/share destination.
-				\item Precondition: user is logged in and wishes to save/share a location.
-				\item Basic Path: after pressing the save/share location button, the client device will send data regarding the users current position. This information is persisted to the users database and stored for future use by the user.
-				\item Postcondition: client device displays storage of location by showing an icon over the users current position.
-				\end{enumerate}
-				
-			\subsubsection{Use Case Name: Display metadata with information regarding points of interest}
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user navigates passed or near a point of interest.
-				\item Precondition: user is logged in and is currently en route to a destination.
-				\item Basic Path: user navigated passed a point of interest, the client application sends current data to the points of interest module which searches for any nearby points. After which any data gathered is persisted back to the client device which displays it in the form of a popup.
-				\item Postcondition: client device displays popup of information regarding the point/points of interest.
-				\end{enumerate}
-				
-			\subsubsection{Use Case Name: Give user an ETA to destination}
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user enters a destination and is en route.
-				\item Precondition: user is logged in and is currently travelling to a desired destination.
-				\item Basic Path: information regarding the users current location and destination are sent to the navigation and traffic modules which calculate the users estimated time of arrival at the destination which is sent back to the client device.
-				\item Postcondition: client device recieves and displays estimated time of arrival at the destination.
-				\end{enumerate}
-				
-			\subsubsection{Use Case Name: providing information about venues and activities }
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user requests information about venue, cultural or sporting activities.
-				\item Precondition: user is logged in and requests to view activities.
-				\item Basic Path: the request is sent to the activities database which searches and returns all feasible and viable activities matching the users search parameters, which is then sent back to the clients device.
-				\item Postcondition: client device recieves and displays information regarding the requested activities.
-				\end{enumerate}
-				
-			\subsubsection{Use Case Name: provide special routes for users with disabilities}
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user inputs a desired destination.
-				\item Precondition: user is logged in and is disabled, this is set by additional boolean options in the user database.
-				\item Basic Path: the destination and current location of the user is sent to the navigational and traffic modules which calculate an optimal route to the destination, with the addition of special features such as wheelchair ramps.
-				\item Postcondition: client device recieves and displays information regarding the optimal navigational route.
-				\end{enumerate}
-				
-			\subsubsection{Use Case Name:Administrative, create points of interest}
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user desires to create a point of interest.
-				\item Precondition: user is logged in as an administrator, this is set by additional boolean options in the user database.
-				\item Basic Path: the create point of interest button is pressed, which displays a popup notification asking for information about the point of interest such as the name and location etc. This information will be persisted to the database and displayed on all devices.
-				\item Postcondition: client device recieves notification of successful creation of a point of interest, which is then displayed in naviigational information.
-				\end{enumerate}
-				
-			\subsubsection{Use Case Name:collecting and viewing rewards}
-				\begin{enumerate}
-				\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
-				\item Xref????  %needed or even necessary?
-				\item Trigger: user completes an activity or reward worthy action such as x amount of steps/meters weekly.
-				\item Precondition: user is logged in and completes an activity.
-				\item Basic Path: a module for the rewards system triggers events during constant monitoring and persistence of data between client and server so as to notify the user when an activity has been completed, the system sends a notification to the client device upon activity completion.
-				\item Postcondition: client recieves notification about completion of an activity and is directed to the third party rewards system.
-				\end{enumerate}
-		\subsubsection{Adjacency Matrix}
-		\begin{table}[]
-\centering
-\caption{My caption}
-\label{my-label}
-\begin{tabular}{llllllllllllllllll}
-Requirement      & Priority     & UC1 & UC2 & UC3 & UC4 & UC5 & UC6 & UC7 & UC8 & UC9 & UC10 & UC11 & UC12 & UC13 & UC14 & UC15 & UC16 \\
-REQ1             & 1            & x   & x   & x   & x   &     &     &     &     &     &      &      &      &      &      &      &      \\
-REQ2             & 3            &     &     &     &     & x   & x   &     &     &     &      &      &      &      &      &      &      \\
-REQ3             & 2            &     &     &     &     &     &     & x   & x   &     &      &      &      &      &      &      &      \\
-REQ4             & 4            &     &     &     &     &     &     &     &     & x   &      &      &      &      &      &      &      \\
-REQ5             & 5            &     &     &     &     &     &     &     &     &     & x    &      &      &      &      &      &      \\
-REQ6             & 5            &     &     &     &     &     &     &     &     &     &      & x    & x    &      &      &      &      \\
-REQ7             & 2            &     &     &     &     &     &     &     &     &     &      &      &      & x    & x    & x    & x    \\
-\multicolumn{2}{l}{UC Priority} & 1   & 1   & 1   & 3   & 3   & 5   & 2   & 2   & 4   & 5    & 3    & 3    & 2    & 2    & 4    & 3   
-\end{tabular}
-\end{table}
+			
 
 \end{document}
