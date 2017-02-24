@@ -411,6 +411,12 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Use Case ID: UC8
 			\item Precondition: The user running the application and requires the fastest route from one location to the next.
 			\item Postcondition: Client device recieves and displays information regarding the optimal navigational route.
+			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC8  Providethe fastest route to a destination}
+				\includegraphics[width = 300px]{getPreferedRoute.png}
+		\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -548,10 +554,16 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Precondition: The administrator is logged in and wishes to add or remove a venue.
 			\item Postcondition: The system is updated with the added venue.
 			\item Actor-System interaction model:
-				\graphicspath{ {./Images/User/} }
+				\graphicspath{ {./Images/Administrator/} }
 				\begin{figure}[h]
-				\caption{Use Case Diagram - UC12  Allow users the ability to save a location(drop a pin)}
-				\includegraphics[width = 400px]{SaveLocation.png}
+				\caption{Use Case Diagram - UC12 Add Venue)}
+				\includegraphics[width = 300px]{AddVenue.png}
+				\end{figure}
+		
+				\graphicspath{ {./Images/Administrator/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC12 Remove Venue)}
+				\includegraphics[width = 300px]{RemoveVenue.png}
 				\end{figure}
 			\end{enumerate}
 
