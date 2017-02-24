@@ -85,7 +85,7 @@ The application will use communication interfaces to determine traffic and the b
 	Weekly goals will be provided to motivate users to attend all their lectures during the week,  explore the campus and be more informed about it as well as to increase the amount of steps they take this being beneficial to their overall wellbeing.
 
 	\subsection{User Characteristics}
-	There are three main categories of individuals that will make use of the application namely administrators,  general users and third party rewards managers.
+	There are three main categories of individuals that will make use of the application namely administrators,  general users and information providers.
 	\\
 
 
@@ -95,7 +95,7 @@ The application will use communication interfaces to determine traffic and the b
 	The general users of the system will consist of students,  lecturers,  guests and university employees. They will only make use of the mobile application. This means that they will not require any knowledge of how the software is implemented however,  they will need to have knowledge regarding how to use a smart device. These users will mainly use the application for navigational purposes.
 	\\
 
-	Third party rewards managers will consist of business parties who will provide rewards to individuals who have obtained their weekly goal. Since they will only make use of the client side of the mobile application, they will not require any knowledge of how the system is implemented. They will however, require knowledge regarding if the user has reached their goal or not.
+	The information providers role will be to inform administrators regarding events taking place at the university as well as to provide information regarding different buildings and landmarks within the university. They will not necessarily make use of the mobile application and will therefore only require knowledge regarding the university itself.
 
 	\subsection{Constraints}
 	The following are restrictions related to the application:
@@ -109,6 +109,7 @@ The application will use communication interfaces to determine traffic and the b
 				\item Usability - The applications interface should be easy to use and understand.
 				\item Size - The application should not require too much memory in order to operate.
 				\end{enumerate}
+	\newpage
 	\subsection{Assumptions and Dependencies}
 	Since the NavUP system is being created for mobile devices,  it is assumed that all those who require the application,  will have access to a mobile device. It is then assumed that these devices will have the required capabilities necessary to run the application. Such dependencies include built in WiFi,  GPS and cellular connectivity as well as the required data/airtime(in the event that they are not connected to the University's Wi-Fi).
 \\
@@ -130,8 +131,6 @@ An assumption in terms of the systems performance includes the idea that it will
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Requirements Specification}		
-
-	\subsection{External Interface and Architectural Requirements}
 		
 		The NavUP system will be available for use on many platforms and make use of multiple means of newtork links and other extenal interfaces such as GPS and GIS services.
 		Other requirements such as quality,  integration and architectural constraints will also be covered in this section.
@@ -162,6 +161,7 @@ An assumption in terms of the systems performance includes the idea that it will
 			The system should allow administrators the ability to C.R.U.D it.
 			
 %%%%%%%%%%%%%%%%%%%%%%======================   USE CASES   ================%%%%%%%%%%%%%%%%
+	\newpage
 	\subsection{Use Cases}
 	%%%%%%%%%%%%%%%%%%%%%%======================   UC1    ================%%%%%%%%%%%%%%%%
 		\subsubsection{Use Case for REQ1: Navigate user to their desired location}
@@ -171,6 +171,11 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Precondition: User is running the NavUP application and enters the navigation module
 			\item Postcondition: Client device recieves and displays navigational information to destination.
 			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram -  UC1 Navigate user to their desired location}
+				\includegraphics[height = 200px]{GetDesiredLocation.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -198,6 +203,7 @@ An assumption in terms of the systems performance includes the idea that it will
 		
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC2    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ1: Obtain Current Location}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
@@ -205,6 +211,11 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Precondition: User is running the NavUP application and requires their location
 			\item Postcondition: Client device recieves and displays the user's current location data.
 			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram -  UC2  Obtain Current Location}
+				\includegraphics[height = 200px]{ObtainCurrentLocation.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -229,6 +240,7 @@ An assumption in terms of the systems performance includes the idea that it will
 		
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC3    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ1: Search for Location}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
@@ -236,6 +248,11 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Precondition: User is running the NavUP application and searches for a given location.
 			\item Postcondition: Information regarding  the searched location os provided.
 			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram -  UC3  Search for location}
+				\includegraphics[height = 200px]{SearchForLocation.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -262,6 +279,7 @@ An assumption in terms of the systems performance includes the idea that it will
 
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC4    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ1: Calculate the estimated time of arrival}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
@@ -269,6 +287,11 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Precondition: User is running the NavUP application and currently travelling to a destination.
 			\item Postcondition: Client device recieves and displays the estimated time of arrival.
 			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC4  Calculate the estimated time of arrival}
+				\includegraphics[height = 200px]{CalculateETA.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -291,13 +314,13 @@ An assumption in terms of the systems performance includes the idea that it will
 		\end{table}
 
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC5    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ2: Display metadata with information regarding venues and points of interest}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC5
 			\item Precondition: User is running the NavUP application and is currently travelling to a destination.
 			\item Postcondition: Client device displays a popup of information a point(s)of interest.
-			\item Actor-System interaction model:
 			\end{enumerate} 
 
 		\begin{table}[htb]
@@ -324,6 +347,7 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Precondition: The user is running the application and requests to view activities.
 			\item Postcondition: Client device recieves and displays information regarding the requested activities.
 			\item Actor-System interaction model:
+				
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -350,6 +374,11 @@ An assumption in terms of the systems performance includes the idea that it will
 			\item Precondition: The user is running the application and requires a special route as they have a disability.
 			\item Postcondition: Client device recieves and displays information regarding the optimal navigational route for the special needs user.
 			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC7  Provide special routes for users with disabilities}
+				\includegraphics[height = 200px]{getPreferedRoute.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -375,6 +404,7 @@ An assumption in terms of the systems performance includes the idea that it will
 		\end{table}
 
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC8    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ3: Provide the fastest route to a destination}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
@@ -406,12 +436,19 @@ An assumption in terms of the systems performance includes the idea that it will
 		\end{table}
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC9    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ4: The user logs into the application}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC9
 			\item Precondition: The user wishes to log into the application.
 			\item Postcondition: Client device logs the user into the system and displays the user's login page.
+			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram -  UC9 The user logs into the application}
+				\includegraphics[height = 200px]{Login.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -434,12 +471,19 @@ An assumption in terms of the systems performance includes the idea that it will
 		\end{table}
 
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC10    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ5: Collecting and viewing rewards}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC10
 			\item Precondition: The user is logged in and completes an activity.
 			\item Postcondition: Client device recieves a notification concerning the completion of and activity and is directed to the third party rewards system.
+			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC10 Collecting and viewing rewards}
+				\includegraphics[width = 500px]{GetRewards.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -460,12 +504,19 @@ An assumption in terms of the systems performance includes the idea that it will
 
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC11    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ6: Allow users the ability to save a location(drop a pin)}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC11
 			\item Precondition: The user is logged in and wishes to save their location.
 			\item Postcondition: Client device displays storage of a location by showing an icon over the specified position.
+			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC11  Allow users the ability to save a location(drop a pin)}
+				\includegraphics[width = 400px]{SaveLocation.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -489,12 +540,19 @@ An assumption in terms of the systems performance includes the idea that it will
 	
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC12    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ7: Add or remove a venue}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC12
 			\item Precondition: The administrator is logged in and wishes to add or remove a venue.
 			\item Postcondition: The system is updated with the added venue.
+			\item Actor-System interaction model:
+				\graphicspath{ {./Images/User/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC12  Allow users the ability to save a location(drop a pin)}
+				\includegraphics[width = 400px]{SaveLocation.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -521,12 +579,25 @@ An assumption in terms of the systems performance includes the idea that it will
 
 
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC13    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ7: Add or remove event}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC13
 			\item Precondition: The administrator is logged in and wishes to add or remove an event.
 			\item Postcondition: The system is updated with the added event.
+			\item Actor-System interaction model:
+				\graphicspath{ {./Images/Administrator/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC13 Add Event)}
+				\includegraphics[width = 300px]{AddEvent.png}
+				\end{figure}
+		
+				\graphicspath{ {./Images/Administrator/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC13 Remove Event)}
+				\includegraphics[width = 300px]{RemoveEvent.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -549,12 +620,19 @@ An assumption in terms of the systems performance includes the idea that it will
 		\end{table}
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC14    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ7: Update Information}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC14
 			\item Precondition: The administrator is logged in and wishes to update the information of a venue or landmark.
 			\item Postcondition: The system is updated with the added new information regarding the venue or landmark.
+			\item Actor-Sytem interaction model:
+				\graphicspath{ {./Images/Administrator/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC14  Update Information)}
+				\includegraphics[width = 300px]{UpdateInfo.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -581,12 +659,25 @@ An assumption in terms of the systems performance includes the idea that it will
 		
 		
 		%%%%%%%%%%%%%%%%%%%%%%======================   UC15    ================%%%%%%%%%%%%%%%%
+		\newpage
 		\subsubsection{Use Case for REQ7: Add or remove goals}
 			\begin{enumerate}
 			\renewcommand{\labelenumi}{{\textbf{\arabic{enumi}.}}}
 			\item Use Case ID: UC15
 			\item Precondition: The administrator is logged in and wishes to add or remove a goal.
 			\item Postcondition: The system is updated with the new goals information.
+			\item Actor-System interaction model:
+				\graphicspath{ {./Images/Administrator/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC15 Add Goals)}
+				\includegraphics[width = 300px]{AddGoals.png}
+				\end{figure}
+		
+				\graphicspath{ {./Images/Administrator/} }
+				\begin{figure}[h]
+				\caption{Use Case Diagram - UC15  Remove Goals)}
+				\includegraphics[width = 300px]{RemoveGoals.png}
+				\end{figure}
 			\end{enumerate}
 
 		\begin{table}[htb]
@@ -618,9 +709,8 @@ An assumption in terms of the systems performance includes the idea that it will
 		\includegraphics[width=16cm, height=4cm]{Adjacency-Matrix-2.png}
 		\caption{Traceability Matrix 2}
 		\end{figure}
-\newpage
-\input{./UseCaseDiagrams.tex}
-
+	
+	\newpage
 	\subsection{Quality Requirements}
 				A system of the complexity and scale of NavUP must meet specific quality requirements such as:
 				
